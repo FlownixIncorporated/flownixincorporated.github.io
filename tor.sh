@@ -1,4 +1,3 @@
-sudo apt update
 sudo apt install tor
 sudo apt install npm
 
