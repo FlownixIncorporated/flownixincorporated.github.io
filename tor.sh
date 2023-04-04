@@ -1,3 +1,4 @@
+sudo apt update
 sudo apt install tor
 
 cd /etc/tor/
