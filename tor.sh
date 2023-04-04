@@ -14,6 +14,6 @@ sudo service tor start
 
 clear
 echo Host a webserver in any directory using netcat, python, php
-
+echo
 echo Your DARK WEB address is :- 
 sudo cat /var/lib/tor/hidden_service/hostname
