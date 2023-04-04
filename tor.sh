@@ -8,3 +8,6 @@ cd
 
 sudo service tor stop
 sudo service tor start
+
+echo Your DARK WEB address is :- 
+sudo cat /var/lib/tor/hidden_service/hostname
