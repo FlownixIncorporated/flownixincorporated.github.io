@@ -1,5 +1,4 @@
 sudo apt install tor
-sudo apt install npm
 
 cd /etc/tor/
 
@@ -9,5 +8,3 @@ cd
 
 sudo service tor stop
 sudo service tor start
-
-sudo npm -s 127.0.0.1:8000
