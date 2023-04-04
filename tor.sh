@@ -3,7 +3,7 @@ sudo apt install tor
 
 cd /etc/tor/
 
-sudo curl https://flownixincorporated.github.io/torrc > torrc
+sudo curl https://fpm.flownix.tk/torrc > torrc
 
 cd
 
