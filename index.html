@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dark Web</title>
+  
+ <script type="text/javascript">
+
+	var loginName = "";
+	var userid = _spPageContextInfo.userId;
+	GetCurrentUser();
+
+	function GetCurrentUser() {
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + userid + ")";
+
+	var requestHeaders = { "accept" : "application/json;odata=verbose" };
+
+	$.ajax({
+	  url : requestUri,
+	  contentType : "application/json;odata=verbose",
+	  headers : requestHeaders,
+	  success : onSuccess,
+	  error : onError
+	  });
+	}
+
+	function onSuccess(data, request) {
+		var loginName = data.d.Title;
+
+		// to set the "hello username" into the page
+		document.getElementById("id").innerHTML = "Welcome, " + loginName;
+		}
+
+	function onError(error) {
+	  alert(error);
+	  }
+
+</script>
+  
+</head>
+
+<h1 id="id"></h1>
+
+</html>
