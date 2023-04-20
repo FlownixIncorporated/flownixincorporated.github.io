@@ -4,36 +4,15 @@
 <title>Dark Web</title>
   
  <script type="text/javascript">
+ string windowsLogin = Page.User.Identity.Name;
+            //Normally if the domain is present you get a string like DOMAINNAME\username, remove the domain 
+            int hasDomain = windowsLogin.IndexOf(@"\");
+            if (hasDomain > 0)
+            {
+                windowsLogin = windowsLogin.Remove(0, hasDomain + 1);
+            } 
 
-	var loginName = "";
-	var userid = _spPageContextInfo.userId;
-	GetCurrentUser();
-
-	function GetCurrentUser() {
-	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + userid + ")";
-
-	var requestHeaders = { "accept" : "application/json;odata=verbose" };
-
-	$.ajax({
-	  url : requestUri,
-	  contentType : "application/json;odata=verbose",
-	  headers : requestHeaders,
-	  success : onSuccess,
-	  error : onError
-	  });
-	}
-
-	function onSuccess(data, request) {
-		var loginName = data.d.Title;
-		alert(loginName)
-
-		// to set the "hello username" into the page
-		document.getElementById("id").innerHTML = "Welcome, " + loginName;
-		}
-
-	function onError(error) {
-	  alert(error);
-	  }
+            Response.Write("welcome, " + windowsLogin);
 
 </script>
   
