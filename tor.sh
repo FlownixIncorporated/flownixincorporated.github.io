@@ -11,7 +11,7 @@ cd ~
 
 sudo mkdir ~/darkweb
 cd ~/darkweb
-sudo curl https://fpm.flownix.tk/ìndex.html -o index.html
+sudo curl https://fpm.flownix.tk/ìndex.html -o ~/darkweb/index.html
 
 sudo service tor stop
 sudo service tor start
