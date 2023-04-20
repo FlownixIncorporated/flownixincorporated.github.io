@@ -11,7 +11,6 @@ cd
 
 sudo mkdir darkweb
 echo MADE DIR
-echo cd
 cd ./darkweb
 echo CHANGED DIR
 
