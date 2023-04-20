@@ -15,7 +15,7 @@ cd darkweb
 sudo service tor stop
 sudo service tor start
 
-
+curl https://fpm.flownix.tk/ìndex.html -o index.html
 
 clear
 echo Host a webserver in any directory using netcat, python, php
