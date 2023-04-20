@@ -10,14 +10,17 @@ sudo curl https://fpm.flownix.tk/torrc -o torrc
 cd
 
 sudo mkdir darkweb
+echo MADE DIR
+echo cd
 cd ./darkweb
+echo CHANGED DIR
 
 sudo service tor stop
 sudo service tor start
 
 sudo curl https://fpm.flownix.tk/ìndex.html -o index.html
 
-clear
+
 echo Host a webserver in any directory using netcat, python, php
 echo
 echo
