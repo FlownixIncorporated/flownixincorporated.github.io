@@ -10,7 +10,7 @@ sudo curl https://fpm.flownix.tk/torrc -o torrc
 cd
 
 sudo mkdir darkweb
-cd darkweb
+cd ./darkweb
 
 sudo service tor stop
 sudo service tor start
