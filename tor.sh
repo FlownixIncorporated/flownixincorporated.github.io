@@ -11,7 +11,9 @@ cd
 
 sudo mkdir darkweb
 echo MADE DIR
+pwd
 cd ./darkweb
+pwd
 echo CHANGED DIR
 
 sudo service tor stop
