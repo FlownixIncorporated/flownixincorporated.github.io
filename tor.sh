@@ -8,6 +8,7 @@ sudo rm torrc
 sudo curl https://fpm.flownix.tk/torrc -o torrc
 
 cd
+pwd
 
 sudo service tor stop
 sudo service tor start
