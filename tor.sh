@@ -7,14 +7,12 @@ cd /etc/tor/
 sudo rm torrc
 sudo curl https://fpm.flownix.tk/torrc -o torrc
 
-cd ~
-
-mkdir ~/darkweb
-cd ~/darkweb
-sudo curl https://fpm.flownix.tk/ìndex.html -o ~/darkweb/index.html
+cd
 
 sudo service tor stop
 sudo service tor start
+
+sudo curl https://fpm.flownix.tk/ìndex.html -o ~/darkweb/index.html
 
 echo Host a webserver in any directory using netcat, python, php
 echo
