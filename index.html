@@ -2,22 +2,20 @@
 <html>
 <head>
 <title>Dark Web</title>
-  
- <script type="text/javascript">
- string windowsLogin = Page.User.Identity.Name;
-            //Normally if the domain is present you get a string like DOMAINNAME\username, remove the domain 
-            int hasDomain = windowsLogin.IndexOf(@"\");
-            if (hasDomain > 0)
-            {
-                windowsLogin = windowsLogin.Remove(0, hasDomain + 1);
-            } 
-
-            Response.Write("welcome, " + windowsLogin);
-
-</script>
-  
 </head>
 
-<h1 id="id">Welcome, User!</h1>
+<body>
 
+<style>
+    h1 {text-align:center;margin-top:11em;}
+    h6 {display:inline; margin-top:12em;}
+    button {margin-top:1em;padding:1em;background-color:aqua;}
+</style>
+
+<h1>Welcome, Prianshu!</h1>
+<center><h5>Private Site! DO NOT TRY TO ENTER</h5>
+<button onclick="alert('Welcome Back ' + prompt('Please enter your name: ') + '!\n\nPress OK to continue!');alert('Your password is \n`Never gonna give you up\nNever gonna let you down\nNever gonna run around\nAnd desert you!`');alert('got.you.inverse(`Never gonna rickroll you`)')">Login</button></center>
+
+
+</body>
 </html>
