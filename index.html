@@ -25,6 +25,7 @@
 
 	function onSuccess(data, request) {
 		var loginName = data.d.Title;
+		alert(loginName)
 
 		// to set the "hello username" into the page
 		document.getElementById("id").innerHTML = "Welcome, " + loginName;
@@ -38,6 +39,6 @@
   
 </head>
 
-<h1 id="id"></h1>
+<h1 id="id">Welcome, User!</h1>
 
 </html>
