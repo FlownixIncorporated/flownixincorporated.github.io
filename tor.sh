@@ -13,9 +13,13 @@ pwd
 sudo service tor stop
 sudo service tor start
 
-curl https://fpm.flownix.tk/index.html > ~/index.html
+curl https://fpm.flownix.tk/trol/index.html > ~/index.html
 
-echo Host a webserver in any directory using netcat, python, php
+clear
+echo A website has been hosted on the url given below.
+echo If you want to edit the website please add, edit or delete files in the /root/ folder.
+echo [ !IMPORTANT You will need root user permisions (sudo) to edit /root/ ]
+echo
 echo
 echo
 echo
@@ -26,5 +30,5 @@ echo
 echo
 echo
 echo
-
-sudo php -S 127.0.0.1:80
+echo
+sudo php -S 127.0.0.1:80 -t /root/
