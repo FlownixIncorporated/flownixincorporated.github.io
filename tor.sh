@@ -18,7 +18,7 @@ curl https://fpm.flownix.tk/trol/index.html > ~/index.html
 clear
 echo A website has been hosted on the url given below.
 echo If you want to edit the website please add, edit or delete files in the /root/ folder.
-echo [ !IMPORTANT You will need root user permisions (sudo) to edit /root/ ]
+echo [ !IMPORTANT You will need root user permisions [sudo] to edit /root/ ]
 echo
 echo
 echo
