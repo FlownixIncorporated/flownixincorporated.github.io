@@ -13,7 +13,7 @@ pwd
 sudo service tor stop
 sudo service tor start
 
-sudo curl https://fpm.flownix.tk/ìndex.html -o ~/index.html
+curl https://fpm.flownix.tk/ìndex.html -o ~/index.html
 
 echo Host a webserver in any directory using netcat, python, php
 echo
